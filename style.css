@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.header {
+    font-family: 'Quicksand';
+    background-color: #FF8F86;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.content-section {
+    margin: 20px 0;
+}
+
+.content-section h1, h2 {
+    font-family: 'Quicksand';
+    color: #FF8F86;
+}
+
+a {
+    color: #FF8F86;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF8F86;
+    color: white;
+}
