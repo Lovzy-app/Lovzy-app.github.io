@@ -23,7 +23,8 @@ body {
     margin: 20px 0;
 }
 
-.content-section h1, h2 {
+.content-section h1,
+h2 {
     font-family: 'Quicksand';
     color: #FF8F86;
 }
@@ -37,4 +38,47 @@ footer {
     padding: 20px;
     background-color: #FF8F86;
     color: white;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.form-container input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #FF8F86;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #e77a75;
+}
+
+.form-container .disclaimer {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #555;
+}
+
+.form-container .disclaimer2 {
+    font-size: 0.8em;
+    margin-top: 4px;
+    color: #555;
 }

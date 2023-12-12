@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Account Deletion Request</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Lovzy Account Deletion Request</h1>
+    </div>
+
+    <div class="form-container">
+        <h2>Account Deletion Request</h2>
+
+        <form id="deleteAccountForm">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <p class="disclaimer2">
+                Please ensure that the name and email address you enter is the same one associated with your account. This is necessary to verify your identity and process the account deletion request.
+            </p>
+
+            <input type="submit" value="Request Deletion">
+
+            <p class="disclaimer">
+                Please note that by requesting to delete your account, all of your personal data, including messages, matches, quiz answers, and other associated informations, will be permanently deleted and cannot be recovered.
+            </p>
+        </form>
+
+    </div>
+
+    <script>
+        document.getElementById('deleteAccountForm').onsubmit = function(event) {
+            event.preventDefault();
+
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+
+            var subject = encodeURIComponent('Account Deletion Request');
+            var emailBody = encodeURIComponent('Hello,\n\nI would like to request the deletion of my account.\n\nName: ' + name + '\nEmail: ' + email + '\n\nThank you.');
+
+            window.location = 'mailto:q56271318@gmail.com?subject=' + subject + '&body=' + emailBody;
+        };
+    </script>
+
+    <footer>
+        &copy; 2023 Lovzy
+    </footer>
+</body>
+
+</html>
