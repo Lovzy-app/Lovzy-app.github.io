@@ -82,3 +82,13 @@ input[type="email"] {
     margin-top: 4px;
     color: #555;
 }
+
+.form-container textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
